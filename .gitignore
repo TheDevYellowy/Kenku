@@ -1,1 +1,8 @@
 node_modules/
+
+# folders for the words and such
+temp/
+words/
+
+# openai whisper model
+whisper/*.bin
