@@ -6,7 +6,6 @@ const {
 const { Client, IntentsBitField } = require("discord.js");
 const { opus } = require("prism-media");
 const ffmpeg = require("fluent-ffmpeg");
-const cp = require("child_process");
 const shell = require("shelljs");
 const fs = require("fs");
 
@@ -29,7 +28,7 @@ module.exports = class extends Client {
     this.connection = null;
     /** @type {Record<number, NodeJS.Timeout>} */
     this.timeouts = {};
-    this.model = "large-v3-q5_0.bin";
+    this.model = "large-v2.bin";
 
     this.words = [];
 

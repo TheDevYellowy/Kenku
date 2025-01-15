@@ -6,3 +6,7 @@ words/
 
 # openai whisper model
 whisper/*.bin
+
+# files for tests
+test/
+test.wav
